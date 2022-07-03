@@ -59,7 +59,7 @@ contract SupplyChain {
   }
 
   modifier paidEnough(uint _price) { 
-    require(msg.value >= _price); 
+    require(msg.value >= _price, "this test is stupid - invalid opcode"); 
     _;
   }
 
